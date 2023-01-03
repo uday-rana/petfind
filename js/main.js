@@ -11,6 +11,9 @@ window.onload = function (e) {
 	document.querySelector(`nav`).querySelectorAll(`a`)[2].onclick = filter_1_3;
 	document.querySelector(`nav`).querySelectorAll(`a`)[3].onclick =
 		filter_4_plus;
+	document.querySelector(`nav`).querySelectorAll(`a`)[4].onclick = filterDog;
+	document.querySelector(`nav`).querySelectorAll(`a`)[5].onclick = filterCat;
+	document.querySelector(`nav`).querySelectorAll(`a`)[6].onclick = filterBird;
 };
 
 function loadTableWithFilters() {
