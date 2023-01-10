@@ -5,10 +5,10 @@ var filterAgeMax = Number.MAX_VALUE; // sets the filter age max to the largest n
 window.onload = function (e) {
 	loadTableWithFilters();
 	let navItems = document.querySelector(`nav`).querySelectorAll(`li`);
-	navItems[0].onclick = filterAllPets;
-	navItems[1].onclick = filter_zero_1;
-	navItems[2].onclick = filter_1_3;
-	navItems[3].onclick = filter_4_plus;
+	navItems[0].onclick = filter_zero_1;
+	navItems[1].onclick = filter_1_3;
+	navItems[3].onclick = filterAllPets;
+	navItems[2].onclick = filter_4_plus;
 	navItems[4].onclick = filterDog;
 	navItems[5].onclick = filterCat;
 	navItems[6].onclick = filterBird;
