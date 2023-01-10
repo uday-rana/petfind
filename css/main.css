@@ -1,19 +1,30 @@
+/* This file contains all the CSS for the page except the table. */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-	background-color: #eeeeee;
-	color: #222831;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: Tahoma, sans-serif;
+	font-size: 11pt;
+	background: #ffffff;
+	color: #333;
 }
 
 nav,
 footer {
-	background-color: #393e46;
+	background-color: #343434;
+	color: #eee;
 }
 
 header {
 	background-color: #00adb5;
 	color: #eeeeee;
-	padding: 1%;
+	padding: 1px 1%;
+	margin: 0 0;
 }
 
 h1.app-title {
@@ -22,34 +33,54 @@ h1.app-title {
 	margin-bottom: 0;
 }
 
-div.main-table-container {
-	max-height: 80vh;
-	overflow: auto;
-}
-
-table.main-table-top th {
-	background-color: #00adb5;
-	color: #eeeeee;
-	padding: 8px;
-	width: 85%;
-	min-width: 120px;
-}
-
-table.main-table td {
-	background-color: #eeeeee;
-	color: #222831;
-	border: 2px solid #393e46;
+footer {
+	height: 30px;
+	width: 100%;
 	text-align: center;
-	width: 85%;
-	min-width: 120px;
-}
-
-table.main-table td img {
-	margin: auto;
+	margin: 20px 0 0;
+	padding-top: 13px;
 	vertical-align: middle;
 }
 
-table.main-table p span {
-	font-weight: bold;
-	text-decoration: underline;
+main {
+	width: fit-content;
+	margin: auto;
+}
+
+/*Navbar CSS*/
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 0 20px;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	padding: 10px 10px;
+}
+
+nav ul li a {
+	padding: 10px 5px;
+}
+
+nav ul li:hover {
+	background-color: #fff;
+	color: #000;
+	cursor: pointer;
+}
+
+nav ul li:active {
+	background-color: #00adb5;
+	color: #fff;
+	cursor: pointer;
 }

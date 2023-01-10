@@ -1,0 +1,40 @@
+/* This file contains CSS for the table. */
+
+table {
+	border-collapse: collapse;
+	min-width: 120px;
+	max-width: 960px;
+	margin: auto;
+	padding: 0 20;
+}
+
+th {
+	background-color: #00adb5;
+	color: #eeeeee;
+	padding: 8px;
+	min-width: 120px;
+}
+
+td {
+	background-color: #eeeeee;
+	color: #333;
+	padding: 4px 0;
+	border: 1px solid #ccc;
+	text-align: center;
+	min-width: 120px;
+}
+
+.table-container {
+	max-height: 80vh;
+	overflow: auto;
+}
+
+td img {
+	margin: auto;
+	vertical-align: middle;
+}
+
+table p span {
+	font-weight: bold;
+	text-decoration: underline;
+}
